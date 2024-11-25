@@ -21,4 +21,4 @@ Line 34 of `/app/main.py` contains the port that this project will run on, and l
 
 From `/app/`, run `python3 -m main` to start the server locally. Changes made will usually be picked up in realtime by the server. 
 
-If you want to deploy it with docker, instructions and common issues can be found at [https://github.com/organization-x/omni]([https://github.com/organization-x/omni) under "Quickstart Guide for Local Deployment" and "Common Issues", respectively.
+If you want to deploy it with docker, instructions and common issues can be found at [https://github.com/organization-x/omni](https://github.com/organization-x/omni) under "Quickstart Guide for Local Deployment" and "Common Issues", respectively.
