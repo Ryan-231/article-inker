@@ -1,16 +1,5 @@
 # Run by typing python3 main.py
 
-# **IMPORTANT:** only collaborators on the project where you run
-# this can access this web server!
-
-"""
-    Bonus points if you want to have internship at AI Camp
-    1. How can we save what user built? And if we can save them, like allow them to publish, can we load the saved results back on the home page? 
-    2. Can you add a button for each generated item at the frontend to just allow that item to be added to the story that the user is building? 
-    3. What other features you'd like to develop to help AI write better with a user?
-    4. How to speed up the model run? Quantize the model? Using a GPU to run the model?
-"""
-
 # import basics
 import os
 
@@ -25,11 +14,11 @@ from aitextgen import aitextgen
 # ai = aitextgen(model_folder="model/",
 #                tokenizer_file="model/aitextgen.tokenizer.json", to_gpu=False)
 
+# change to true to use gpu for this project, will make load times faster
 ai = aitextgen(model="distilgpt2", to_gpu=False)
 
 
-
-# setup the webserver
+# setup the server
 # port may need to be changed if there are multiple flask servers running on same server
 port = 12345
 base_url = get_base_url(port)
@@ -45,6 +34,7 @@ app.secret_key = os.urandom(64)
 
 # set up the routes and logic for the webserver
 
+# decide which model to use based on user input
 story_genre = ''
 def genre_text_generation(genre_type):
     if genre_type == 'Horror':
@@ -77,7 +67,7 @@ def results():
         return render_template('index.html', generated=None)
 
 
-
+# take prompt and genre from user and send to the correct model, then take its response
 @app.route(f'{base_url}/generate_text/', methods=["POST"])
 def generate_text():
     """
@@ -144,13 +134,6 @@ def generate_text():
     data = {'generated_ls': generated}
     session['data'] = generated[0]
     return redirect(url_for('results'))
-
-# define additional routes here
-# for example:
-# @app.route(f'{base_url}/about')
-# def team_members():
-#     return render_template('about') # would need to actually make this page
-
 
 if __name__ == '__main__':
     # IMPORTANT: change url to the site where you are editing this file.
