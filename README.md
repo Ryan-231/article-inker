@@ -17,7 +17,7 @@ cd back into `/app/` and run `python3 -m pip install -r requirements.txt` to ins
 and
 `pip3 install -u aitextgen`
 
-Line 23 of `/app/main.py` contains the port that this project will run on, and line 140 contains its url. If you want to run multiple projects at once, or if you want to run this on a remote server, you might want to change the port number and url, respectively. The port is by default `12345`, and the url is by default `localhost`.
+Line 23 of `/app/main.py` contains the port that this project will run on, and line 140 contains its url. If you want to run multiple projects at once, or if you want to run this on a remote server, you might want to change the port number and url, respectively. The port is by default `12345`, and the url is by default `localhost`. Line 18 contains the parameter `to_gpu=False`. You can change this to true to have the model run on your GPU to decrease load times. This won't work if you don't have a GPU.
 
 From `/app/`, run `python3 -m main` to start the server locally. Changes made will usually be picked up in realtime by the server. 
 
