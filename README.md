@@ -17,7 +17,7 @@ cd back into `/app/` and run `python3 -m pip install -r requirements.txt` to ins
 and
 `pip3 install -u aitextgen`
 
-Line 34 of `/app/main.py` contains the port that this project will run on, and line 157 contains its url. If you want to run multiple projects at once, or if you want to run this on a remote server, you might want to change the port number and url, respectively. The port is by default `12345`, and the url is by default `localhost`.
+Line 23 of `/app/main.py` contains the port that this project will run on, and line 140 contains its url. If you want to run multiple projects at once, or if you want to run this on a remote server, you might want to change the port number and url, respectively. The port is by default `12345`, and the url is by default `localhost`.
 
 From `/app/`, run `python3 -m main` to start the server locally. Changes made will usually be picked up in realtime by the server. 
 
