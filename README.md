@@ -12,10 +12,15 @@ Download the source code as a .zip archive and extract it.
 -Run `cd app/model`
 
 -Open the link in the `model.txt` file.
+
 -Copy the contents of the folder at that link into the `app/model/` folder and delete `model.txt.`
+
 -Run `cd /app/aitextgen` 
+
 -Open the link in the `aitextgen.txt` file.
+
 -Copy the contents of the folder at that link into the `app/aitextgen/` folder and delete `aitextgen.txt.`
+
 -Run 
 `cd /app` 
 `python3 -m pip install -r requirements.txt`
