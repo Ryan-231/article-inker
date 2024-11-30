@@ -9,7 +9,8 @@ This tool requires Python 3.10.x to run and the `pip` package manager, which can
 ### Installation and setup
 Download the source code as a .zip archive and extract it.
 
--Run `cd app/model` \n
+-Run `cd app/model`
+
 -Open the link in the `model.txt` file.
 -Copy the contents of the folder at that link into the `app/model/` folder and delete `model.txt.`
 -Run `cd /app/aitextgen` 
