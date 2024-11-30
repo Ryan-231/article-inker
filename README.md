@@ -21,7 +21,7 @@ Download the source code as a .zip archive and extract it.
 
 -Copy the contents of the folder at that link into the `app/aitextgen/` folder and delete `aitextgen.txt.`
 
--Run 
+-Run           
 `cd /app`        
 `python3 -m pip install -r requirements.txt`   
 `pip install -u Flask`      
