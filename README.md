@@ -22,11 +22,10 @@ Download the source code as a .zip archive and extract it.
 -Copy the contents of the folder at that link into the `app/aitextgen/` folder and delete `aitextgen.txt.`
 
 -Run 
-`cd /app` 
-`python3 -m pip install -r requirements.txt`
-`pip install -u Flask`
-`pip3 install -u aitextgen`
-`cd /app`
+`cd /app`        
+`python3 -m pip install -r requirements.txt`   
+`pip install -u Flask`      
+`pip3 install -u aitextgen`            
 
 ### Launching the project
 Run `python3 -m main` from the `app/` folder to start the server locally. Changes made will usually be picked up in realtime by the server. Input a genre and a couple starting words, click generate, and the tool will generate a short passage based on your genre and prompt.
