@@ -9,25 +9,21 @@ This tool requires Python 3.10.x to run and the `pip` package manager, which can
 ### Installation and setup
 Download the source code as a .zip archive and extract it.
 
-Run 
-`cd app/model` 
-and open the link in the `model.txt` file.
-
-Copy the contents of the folder at that link into the `app/model/` folder and delete `model.txt.`
-
-Run 
-`cd /app/aitextgen` 
-and open the link in the `aitextgen.txt` file.
-
-Copy the contents of the folder at that link into the `app/aitextgen/` folder and delete `aitextgen.txt.`
-
-Run 
-`cd /app`run 
+-Run `cd app/model` 
+-Open the link in the `model.txt` file.
+-Copy the contents of the folder at that link into the `app/model/` folder and delete `model.txt.`
+-Run `cd /app/aitextgen` 
+-Open the link in the `aitextgen.txt` file.
+-Copy the contents of the folder at that link into the `app/aitextgen/` folder and delete `aitextgen.txt.`
+-Run 
+`cd /app` 
 `python3 -m pip install -r requirements.txt`
 `pip install -u Flask`
 `pip3 install -u aitextgen`
+`cd /app`
 
-From `/app/`, run `python3 -m main` to start the server locally. Changes made will usually be picked up in realtime by the server. 
+### Launching the project
+Run `python3 -m main` from the `app/` folder to start the server locally. Changes made will usually be picked up in realtime by the server. Input a genre and a couple starting words, click generate, and the tool will generate a short passage based on your genre and prompt.
 
 ### TODO:
 Add functionality for deploying using Docker.
